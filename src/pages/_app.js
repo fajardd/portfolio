@@ -1,5 +1,11 @@
 import "@/styles/globals.css";
+import SidebarKanan from "@/components/Elements/SidebarKanan";
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+export default function App({ children }) {
+  return (
+    <>
+      <SidebarKanan  />
+      {children}
+    </>
+  );
 }
