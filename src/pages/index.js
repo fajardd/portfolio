@@ -36,12 +36,12 @@ export default function Home() {
           ref={aboutMeRef}
           className="lg:h-screen grid lg:grid-cols-2   "
         >
-          <div className="flex  justify-center items-center bg-white">
+          <div className=" flex  justify-center items-center bg-white">
             <div className="z-40 p-2">
               <Image src={Foto} width={350} height={350} />
             </div>
           </div>
-          <div className="bg-white flex items-center lg:order-first py-6 lg:py-6">
+          <div className=" bg-white flex items-center lg:order-first py-6 lg:py-6">
             <div>
               <div
                 className={`${
@@ -104,7 +104,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="grid md:flex  justify-center items-center gap-x-10  mt-6">
+            <div className="grid md:flex  justify-center items-center gap-x-10 gap-y-6  mt-6">
               <div>
                 <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:shadow-xl hover:rounded-[10px] p-2 rounded-[10px] duration-300">
                   <JavaScriptIcon />

@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <Fragment>
       <NavBar />
-      <main className="container mx-auto mt-16 px-4 md:px-0   z-0">
+      <main className="container mx-auto mt-16 px-4 lg:px-10   z-0">
         {children}
       </main>
       <Footer />
