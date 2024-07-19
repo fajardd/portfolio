@@ -12,6 +12,7 @@ import MySqlIcon from "@/assets/Icons/MySqlIcon";
 import TailwindCssIcon from "@/assets/Icons/TailwindCssIcon";
 import { ArrowCircleRightIcon } from "@heroicons/react/solid";
 import useIntersectionObserver from "@/hooks/useIntersectionObserver";
+import CardProject from "@/components/Elements/CardProject";
 
 export default function Home() {
   const [aboutMeRef, aboutMeVisible] = useIntersectionObserver({
@@ -26,21 +27,21 @@ export default function Home() {
       <Head>
         <title>Fajar</title>
       </Head>
-      <div>
+      <div className="grid grid-cols-1 gap-y-10">
         {/* batas */}
 
         {/* Abouat me */}
         <div
           id="aboutme"
           ref={aboutMeRef}
-          className="grid md:grid-cols-2 h-screen "
+          className="lg:h-screen grid lg:grid-cols-2  border  "
         >
-          <div className="flex justify-center items-center bg-white">
-            <div className="z-40">
+          <div className="flex  border justify-center items-center bg-white">
+            <div className="z-40 p-2">
               <Image src={Foto} width={350} height={350} />
             </div>
           </div>
-          <div className="bg-white flex items-center md:order-first">
+          <div className="bg-white border flex items-center lg:order-first py-6 lg:py-6">
             <div>
               <div
                 className={`${
@@ -69,7 +70,7 @@ export default function Home() {
                   framework css.
                 </p>
                 <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=fjrdwc@gmail.com">
-                  <button className="bg-[#0079FF] rounded-md text-white p-2 px-4 mt-6 flex gap-x-2">
+                  <button className="bg-[#0079FF] rounded-md text-white p-3 px-4 mt-6 flex gap-x-2">
                     Contact Me <ArrowCircleRightIcon className="w-6 h-6" />
                   </button>
                 </Link>
@@ -83,29 +84,27 @@ export default function Home() {
         {/* Skills */}
         <div
           id="skills"
-          className="h-screen mt-6 md:mt-0 flex justify-center items-center"
-          ref={skillsRef}
+          className="lg:h-screen border  flex justify-center items-center "
+          // ref={skillsRef}
         >
-          <div className="border shadow-md rounded-[20px] py-32 w-full bg-white">
+          <div className="border shadow-md rounded-[20px] py-6 lg:py-32 w-full bg-white">
             <div
-              className={`${
-                skillsVisible ? "animate-slideInFromTop" : "opacity-0"
-              }`}
+            // className={`${
+            //   skillsVisible ? "animate-slideInFromTop" : "opacity-0"
+            // }`}
             >
               <div className="flex justify-center">
                 <h1 className="text-[#0079FF] font-semibold">Skills</h1>
               </div>
               <div className="flex justify-center mt-6">
-                <p className="text-[#2F3645] font-semibold w-1/2 text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Labore, libero. Vitae voluptatum repellat cum harum omnis ad
-                  modi repudiandae excepturi saepe incidunt. Cupiditate dolore
-                  eos tempora omnis iste temporibus laborum!
+                <p className="text-[#2F3645]  md:w-1/2 text-center px-6 md:px-0">
+                  Berikut skills bahasa pemrograman maupun pendukung lainnya
+                  yang saya pelajari dan kuasai sebagai frontend developer
                 </p>
               </div>
             </div>
 
-            <div className="md:flex grid justify-center gap-x-6 mt-6">
+            <div className="grid md:flex  justify-center items-center gap-x-10  mt-6">
               <div>
                 <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:shadow-xl hover:rounded-[10px] p-2 rounded-[10px] duration-300">
                   <JavaScriptIcon />
@@ -133,11 +132,16 @@ export default function Home() {
         {/* Project */}
         <div
           id="project"
-          className="h-screen border mt-6 md:mt-0 flex justify-start"
+          className="lg:h-screen mb-40 border  flex justify-center items-center "
         >
-          <div className="mt-24">
+          <div className="  w-full bg-white">
             <div>
               <h1 className="text-[#0079FF] font-semibold">Projects</h1>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              <CardProject />
+              <CardProject />
+              <CardProject />
             </div>
           </div>
         </div>

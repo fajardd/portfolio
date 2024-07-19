@@ -23,7 +23,7 @@ const NavBar = () => {
   }, []);
   return (
     <header
-      className={`fixed top-0 left-0 right-0 bg-white p-4 md:px-32 z-50 transition-shadow duration-300 ${
+      className={`fixed top-0 left-0 right-0 bg-white py-4 px-4 md:px-0 z-50 transition-shadow duration-300 ${
         hasShadow ? "shadow" : ""
       }`}
     >
@@ -35,7 +35,7 @@ const NavBar = () => {
           <p className="text-[#0079FF]">Fajardc</p>
         </div>
         <nav className="hidden md:flex space-x-8">
-          <li className="text-[#2F3645] hover:text-[#0079FF] list-none">
+          <li className="text-[#2F3645] hover:text-[#0079FF] active:text-[#0079FF] list-none">
             <Link href="/#aboutme">About Me</Link>
           </li>
           <li className="text-[#2F3645] hover:text-[#0079FF] list-none">
@@ -64,30 +64,18 @@ const NavBar = () => {
         }`}
       >
         <div>
-          <a
-            href="#"
-            className="block text-[#2F3645] hover:text-[#0079FF] py-2"
-          >
-            Home
-          </a>
-          <a
-            href="#"
-            className="block text-[#2F3645] hover:text-[#0079FF] py-2"
-          >
-            About
-          </a>
-          <a
-            href="#"
-            className="block text-[#2F3645] hover:text-[#0079FF] py-2"
-          >
-            Contact
-          </a>
-          <a
-            href="#"
-            className="block text-[#2F3645] hover:text-[#0079FF] py-2"
-          >
-            Login
-          </a>
+          <li className="block text-[#2F3645] hover:text-[#0079FF] py-2 mt-2 ">
+            <Link href="/#aboutme">About Me</Link>
+          </li>
+          <li className="block text-[#2F3645] hover:text-[#0079FF] py-2">
+            <Link href="/#skills">Skills</Link>
+          </li>
+          <li className="block text-[#2F3645] hover:text-[#0079FF] py-2">
+            <Link href="/#project">Projects</Link>
+          </li>
+          <li className="block text-[#2F3645] hover:text-[#0079FF] py-2">
+            <Link href="/#contact">Resume</Link>
+          </li>
         </div>
       </div>
     </header>
