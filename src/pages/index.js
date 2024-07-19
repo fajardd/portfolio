@@ -34,14 +34,14 @@ export default function Home() {
         <div
           id="aboutme"
           ref={aboutMeRef}
-          className="lg:h-screen grid lg:grid-cols-2  border  "
+          className="lg:h-screen grid lg:grid-cols-2   "
         >
-          <div className="flex  border justify-center items-center bg-white">
+          <div className="flex  justify-center items-center bg-white">
             <div className="z-40 p-2">
               <Image src={Foto} width={350} height={350} />
             </div>
           </div>
-          <div className="bg-white border flex items-center lg:order-first py-6 lg:py-6">
+          <div className="bg-white flex items-center lg:order-first py-6 lg:py-6">
             <div>
               <div
                 className={`${
@@ -84,7 +84,7 @@ export default function Home() {
         {/* Skills */}
         <div
           id="skills"
-          className="lg:h-screen border  flex justify-center items-center "
+          className="lg:h-screen flex justify-center items-center "
           // ref={skillsRef}
         >
           <div className="border shadow-md rounded-[20px] py-6 lg:py-32 w-full bg-white">
@@ -132,7 +132,7 @@ export default function Home() {
         {/* Project */}
         <div
           id="project"
-          className="lg:h-screen mb-40 border  flex justify-center items-center "
+          className="lg:h-screen mb-40  flex justify-center items-center "
         >
           <div className="  w-full bg-white">
             <div>
