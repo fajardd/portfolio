@@ -1,12 +1,20 @@
 {
   "hosting": {
     "public": "out",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
+      {
+        "source": "/projects/admin-presensi",
+        "destination": "/projects/admin-presensi.html"
+      },
+      {
+        "source": "/projects/portfolio",
+        "destination": "/projects/portfolio.html"
+      },
+      {
+        "source": "/projects/rekam-medis",
+        "destination": "/projects/rekam-medis.html"
+      },
       {
         "source": "**",
         "destination": "/index.html"

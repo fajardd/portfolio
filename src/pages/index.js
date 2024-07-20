@@ -24,6 +24,7 @@ export default function Home() {
   return (
     <div>
       <Head>
+        <link rel="icon" href="/favicon.ico" />
         <title>Fajar</title>
       </Head>
       <div className="grid grid-cols-1 gap-y-32 sm:gap-y-10">
@@ -105,25 +106,34 @@ export default function Home() {
             <div className="grid md:flex  justify-center items-center gap-x-10 gap-y-6  mt-6">
               <div>
                 <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:shadow-xl hover:rounded-[10px] p-2 rounded-[10px] duration-300">
-                  <JavaScriptIcon />
+                  <div className="w-[100px] h-[100px]">
+                    <JavaScriptIcon />
+                  </div>
                 </button>
               </div>
               <div>
                 <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:shadow-xl hover:rounded-[10px] p-2 rounded-[10px] duration-300">
-                  <ReactJsIcon />
+                  <div className="w-[100px] h-[100px]">
+                    <ReactJsIcon />
+                  </div>
                 </button>
               </div>
               <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:shadow-xl hover:rounded-[10px] p-2 rounded-[10px] duration-300">
-                <NextjsIcon />
+                <div className="w-[100px] h-[100px]">
+                  <NextjsIcon />
+                </div>
               </button>
               <div>
                 <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:shadow-xl hover:rounded-[10px] p-2 rounded-[10px] duration-300">
-                  <TailwindCssIcon />
+                  <div className="w-[100px] h-[100px]">
+                    <TailwindCssIcon />
+                  </div>
                 </button>
               </div>
-
               <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:shadow-xl hover:rounded-[10px] p-2 rounded-[10px] duration-300">
-                <GitIcon />
+                <div className="w-[100px] h-[100px]">
+                  <GitIcon />
+                </div>
               </button>
             </div>
           </div>
