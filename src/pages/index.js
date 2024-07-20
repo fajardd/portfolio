@@ -7,8 +7,6 @@ import SocialMediaTemplate from "@/components/Layout/SocialMediaTemplate";
 import JavaScriptIcon from "@/assets/Icons/JavaScriptIcon";
 import ReactJsIcon from "@/assets/Icons/ReactJsIcon";
 import GitIcon from "@/assets/Icons/GitIcon";
-import NodeJsIcon from "@/assets/Icons/NodeJsIcon";
-import MySqlIcon from "@/assets/Icons/MySqlIcon";
 import TailwindCssIcon from "@/assets/Icons/TailwindCssIcon";
 import { ArrowCircleRightIcon } from "@heroicons/react/solid";
 import useIntersectionObserver from "@/hooks/useIntersectionObserver";

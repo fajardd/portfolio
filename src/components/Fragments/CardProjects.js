@@ -1,8 +1,12 @@
 import React from "react";
 import Card from "./Card";
 import imageCard from "@/assets/Images/app-1.png";
+import useTruncatetext from "@/hooks/useTruncateText";
 
 const CardProjects = () => {
+  const { truncateText } = useTruncatetext();
+  const cardText =
+    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quidem ex possimus ut quasi eos iusto ";
   return (
     <div className="  w-full bg-white">
       <div>
@@ -12,21 +16,21 @@ const CardProjects = () => {
         <Card
           src={imageCard}
           textImage="App Presensi"
-          textContent="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quidem ex possimus ut quasi eos iusto "
+          textContent={truncateText(cardText, 80)}
           href="https://www.youtube.com/"
           textButton="Read more"
         />
         <Card
           src={imageCard}
           textImage="App Presensi"
-          textContent="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quidem ex possimus ut quasi eos iusto "
+          textContent={truncateText(cardText, 80)}
           href="https://www.youtube.com/"
           textButton="Read more"
         />
         <Card
           src={imageCard}
           textImage="App Presensi"
-          textContent="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quidem ex possimus ut quasi eos iusto "
+          textContent={truncateText(cardText, 80)}
           href="https://www.youtube.com/"
           textButton="Read more"
         />
