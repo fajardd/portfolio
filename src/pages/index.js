@@ -12,7 +12,8 @@ import MySqlIcon from "@/assets/Icons/MySqlIcon";
 import TailwindCssIcon from "@/assets/Icons/TailwindCssIcon";
 import { ArrowCircleRightIcon } from "@heroicons/react/solid";
 import useIntersectionObserver from "@/hooks/useIntersectionObserver";
-import CardProject from "@/components/Elements/CardProject";
+import CardProjects from "@/components/Fragments/CardProjects";
+import NextjsIcon from "@/assets/Icons/NextjsIcon";
 
 export default function Home() {
   const [aboutMeRef, aboutMeVisible] = useIntersectionObserver({
@@ -66,7 +67,7 @@ export default function Home() {
                   Teknologi Yogyakarta (UTY) Jurusan Informatika tahun 2024.
                   Impian dan cita-cita saya adalah menjadi frontend developer.
                   Library maupun framework yang saya gunakan untuk membangun
-                  aplikasi yaitu ReactJs dan Tailwindcss sebagai framework css.
+                  aplikasi yaitu Nextjs dan Tailwindcss sebagai framework css.
                 </p>
                 <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=fjrdwc@gmail.com">
                   <button className="bg-[#0079FF] rounded-md text-white p-3 px-4 mt-6 flex gap-x-2">
@@ -114,6 +115,9 @@ export default function Home() {
                   <ReactJsIcon />
                 </button>
               </div>
+              <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:shadow-xl hover:rounded-[10px] p-2 rounded-[10px] duration-300">
+                <NextjsIcon />
+              </button>
               <div>
                 <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:shadow-xl hover:rounded-[10px] p-2 rounded-[10px] duration-300">
                   <TailwindCssIcon />
@@ -133,16 +137,7 @@ export default function Home() {
           id="project"
           className="lg:h-screen mb-40  flex justify-center items-center "
         >
-          <div className="  w-full bg-white">
-            <div>
-              <h1 className="text-[#0079FF] font-semibold">Projects</h1>
-            </div>
-            <div className="grid md:grid-cols-3 gap-6">
-              <CardProject />
-              <CardProject />
-              <CardProject />
-            </div>
-          </div>
+          <CardProjects />
         </div>
         {/* Project */}
 
