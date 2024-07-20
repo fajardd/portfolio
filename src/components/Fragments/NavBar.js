@@ -23,11 +23,11 @@ const NavBar = () => {
   }, []);
   return (
     <header
-      className={`fixed top-0 left-0 right-0 bg-white py-4 px-4 lg:px-10 z-50 transition-shadow duration-300 ${
+      className={`fixed top-0 left-0 right-0 bg-white py-4  z-50 transition-shadow duration-300 ${
         hasShadow ? "shadow" : ""
       }`}
     >
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto px-4 lg:px-24 flex justify-between items-center">
         <div className=" text-lg font-bold flex">
           <div className="w-8 h-8 rounded-md bg-[#0079FF] text-white flex justify-center items-center mr-3">
             F
@@ -45,7 +45,12 @@ const NavBar = () => {
             <Link href="/#project">Projects</Link>
           </li>
           <li className="text-[#2F3645] hover:text-[#0079FF] list-none">
-            <Link href="/#contact">Resume</Link>
+            <Link
+              target="_blank"
+              href="https://drive.google.com/file/d/1HUxKkA1miYr6JCKVU1r4VopCYnQmbY6L/view?usp=sharing"
+            >
+              Resume
+            </Link>
           </li>
         </nav>
         <div className="md:hidden">
@@ -59,7 +64,7 @@ const NavBar = () => {
         </div>
       </div>
       <div
-        className={`md:hidden bg-white overflow-hidden transition-all duration-500 ease-in-out ${
+        className={`md:hidden container mx-auto px-4 lg:px-32 bg-white overflow-hidden transition-all duration-500 ease-in-out ${
           isOpen ? "max-h-40" : "max-h-0"
         }`}
       >
@@ -74,7 +79,12 @@ const NavBar = () => {
             <Link href="/#project">Projects</Link>
           </li>
           <li className="block text-[#2F3645] hover:text-[#0079FF] py-2">
-            <Link href="/#contact">Resume</Link>
+            <Link
+              target="_blank"
+              href="https://drive.google.com/file/d/1HUxKkA1miYr6JCKVU1r4VopCYnQmbY6L/view?usp=sharing"
+            >
+              Resume
+            </Link>
           </li>
         </div>
       </div>

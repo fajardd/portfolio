@@ -27,7 +27,7 @@ export default function Home() {
       <Head>
         <title>Fajar</title>
       </Head>
-      <div className="grid grid-cols-1 gap-y-10">
+      <div className="grid grid-cols-1 gap-y-32 sm:gap-y-10">
         {/* batas */}
 
         {/* Abouat me */}
@@ -62,12 +62,11 @@ export default function Home() {
                 }`}
               >
                 <p className="text-justify">
-                  Perkenalkan nama saya Fajar Dwi Cahyo. Saya lulusan dari
-                  Universitas Teknologi Yogyakarta (UTY) Jurusan Informatika
-                  tahun 2024. Impian dan cita-cita saya adalah menjadi frontend
-                  developer. Library maupun framework yang saya gunakan untuk
-                  membangun aplikasi yaitu React dan Tailwindcss sebagai
-                  framework css.
+                  Perkenalkan saya Fajar Dwi Cahyo. Lulusan dari Universitas
+                  Teknologi Yogyakarta (UTY) Jurusan Informatika tahun 2024.
+                  Impian dan cita-cita saya adalah menjadi frontend developer.
+                  Library maupun framework yang saya gunakan untuk membangun
+                  aplikasi yaitu ReactJs dan Tailwindcss sebagai framework css.
                 </p>
                 <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=fjrdwc@gmail.com">
                   <button className="bg-[#0079FF] rounded-md text-white p-3 px-4 mt-6 flex gap-x-2">
