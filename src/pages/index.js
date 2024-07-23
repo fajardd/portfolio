@@ -68,7 +68,10 @@ export default function Home() {
                   Library maupun framework yang saya gunakan untuk membangun
                   aplikasi yaitu Nextjs dan Tailwindcss sebagai framework css.
                 </p>
-                <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=fjrdwc@gmail.com">
+                <Link
+                  target="_blank"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=fjrdwc@gmail.com"
+                >
                   <button className="bg-[#0079FF] rounded-md text-white p-3 px-4 mt-6 flex gap-x-2">
                     Contact Me <ArrowCircleRightIcon className="w-6 h-6" />
                   </button>
