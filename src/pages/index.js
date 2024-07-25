@@ -3,6 +3,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Foto from "@/assets/Images/foto-aboutme.png";
+import backgroundImage from "@/assets/Images/background.png";
+import personImage from "@/assets/Images/person.png";
 import SocialMediaTemplate from "@/components/Layout/SocialMediaTemplate";
 import JavaScriptIcon from "@/assets/Icons/JavaScriptIcon";
 import ReactJsIcon from "@/assets/Icons/ReactJsIcon";
@@ -34,11 +36,16 @@ export default function Home() {
         <div
           id="aboutme"
           ref={aboutMeRef}
-          className="lg:h-screen grid lg:grid-cols-2   "
+          className="lg:h-screen grid lg:grid-cols-2 mt-20 lg:mt-0 "
         >
           <div className=" flex  justify-center items-center bg-white">
-            <div className="z-40 p-2">
-              <Image src={Foto} width={350} height={350} />
+            <div className="relative z-40 p-2">
+              {/* <Image src={Foto} width={350} height={350} /> */}
+
+              <Image src={backgroundImage} width={350} height={350} />
+              <div className="absolute  bottom-[54px] left-20 grayscale">
+                <Image src={personImage} height={350} />
+              </div>
             </div>
           </div>
           <div className=" bg-white flex items-center lg:order-first py-6 lg:py-6">

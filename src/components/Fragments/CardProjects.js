@@ -10,7 +10,7 @@ const CardProjects = () => {
   const adminPresensiText =
     "Web admin presensi dibangun menggunakan framework Nextjs dan tailwind css";
   const rekamMedisText =
-    "Aplikasi rekam medis dibangun menggunakan library reactjs sebagai frontend  halaman admin, expressjs sebagai backend api dan tailwind css sebagai cssnya.";
+    "Web admin rekam medis dibangun menggunakan reactjs dan expressjs ";
 
   return (
     <div className="  w-full bg-white">
@@ -29,7 +29,7 @@ const CardProjects = () => {
         <Card
           src={imageCard}
           textImageLink="/projects/admin-presensi"
-          textImage="Admin Presensi"
+          textImage="Presensi"
           textContent={truncateText(adminPresensiText, 80)}
           textButtonLink="/projects/admin-presensi"
           textButton="Read more"

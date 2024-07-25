@@ -49,7 +49,7 @@ const NavBar = () => {
               target="_blank"
               href="https://drive.google.com/file/d/1HUxKkA1miYr6JCKVU1r4VopCYnQmbY6L/view?usp=sharing"
             >
-              Resume
+              CV
             </Link>
           </li>
         </nav>
@@ -83,7 +83,7 @@ const NavBar = () => {
               target="_blank"
               href="https://drive.google.com/file/d/1HUxKkA1miYr6JCKVU1r4VopCYnQmbY6L/view?usp=sharing"
             >
-              Resume
+              CV
             </Link>
           </li>
         </div>
