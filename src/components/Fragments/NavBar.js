@@ -47,7 +47,7 @@ const NavBar = () => {
           <li className="text-[#2F3645] hover:text-[#0079FF] list-none">
             <Link
               target="_blank"
-              href="https://drive.google.com/file/d/1HUxKkA1miYr6JCKVU1r4VopCYnQmbY6L/view?usp=sharing"
+              href="https://drive.google.com/file/d/1TW3iXm6rVmIeLQ8AZJ01d9neNUi-PoGt/view?usp=sharing"
             >
               CV
             </Link>
@@ -81,7 +81,7 @@ const NavBar = () => {
           <li className="block text-[#2F3645] hover:text-[#0079FF] py-2">
             <Link
               target="_blank"
-              href="https://drive.google.com/file/d/1HUxKkA1miYr6JCKVU1r4VopCYnQmbY6L/view?usp=sharing"
+              href="https://drive.google.com/file/d/1TW3iXm6rVmIeLQ8AZJ01d9neNUi-PoGt/view?usp=sharing"
             >
               CV
             </Link>
