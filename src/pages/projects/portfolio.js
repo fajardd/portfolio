@@ -16,7 +16,7 @@ const Portofolio = () => {
         <div className=" ">
           <div id="content-1">
             <h1 className="text-[18px] font-medium">
-              Apa itu web{" "}
+              Apa itu web
               <span className="font-semibold text-[#0079FF]">Portfolio ? </span>
             </h1>
             <div className="mt-3">
@@ -32,7 +32,7 @@ const Portofolio = () => {
           <div id="content-2" className=" mt-6">
             <h1 className="text-[18px] font-medium">
               Web <span className="text-[#0079FF]">Portfolio</span> dibangun
-              menggunakan{" "}
+              menggunakan
             </h1>
             <div className="flex space-x-3 mt-3">
               <div className="w-[30px] h-[30px]">
