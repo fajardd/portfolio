@@ -1,6 +1,8 @@
 import React from "react";
 import Card from "./Card";
 import imageCard from "@/assets/Images/app-1.png";
+import imageCard2 from "@/assets/Images/app-2.png";
+import imageCard3 from "@/assets/Images/app-3.png";
 import useTruncatetext from "@/hooks/useTruncateText";
 
 const CardProjects = () => {
@@ -19,7 +21,7 @@ const CardProjects = () => {
       </div>
       <div className="grid md:grid-cols-3 gap-6">
         <Card
-          src={imageCard}
+          src={imageCard3}
           textImageLink="/projects/portfolio"
           textImage="Portfolio"
           textContent={truncateText(portfolioText, 80)}
@@ -27,11 +29,11 @@ const CardProjects = () => {
           textButton="Read more"
         />
         <Card
-          src={imageCard}
-          textImageLink="/projects/admin-presensi"
+          src={imageCard2}
+          textImageLink="#"
           textImage="Presensi"
           textContent={truncateText(adminPresensiText, 80)}
-          textButtonLink="/projects/admin-presensi"
+          textButtonLink="#"
           textButton="Read more"
         />
         <Card
