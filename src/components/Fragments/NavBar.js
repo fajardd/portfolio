@@ -47,7 +47,7 @@ const NavBar = () => {
           <li className="text-[#2F3645] hover:text-[#0079FF] list-none">
             <Link
               target="_blank"
-              href="https://drive.google.com/file/d/1TW3iXm6rVmIeLQ8AZJ01d9neNUi-PoGt/view?usp=sharing"
+              href="https://drive.google.com/file/d/1WcCbrWlSlYFK9Zcr0mOInKO4JacrBy8j/view?usp=sharing"
             >
               CV
             </Link>
@@ -79,11 +79,8 @@ const NavBar = () => {
             <Link href="/#project">Projects</Link>
           </li>
           <li className="block text-[#2F3645] hover:text-[#0079FF] py-2">
-            <Link
-              target="_blank"
-              href="https://drive.google.com/file/d/1WcCbrWlSlYFK9Zcr0mOInKO4JacrBy8j/view?usp=sharing"
-            >
-              CV
+            <Link target="_blank" href="">
+              CVaddada
             </Link>
           </li>
         </div>
